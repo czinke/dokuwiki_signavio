@@ -1,0 +1,7 @@
+base   signavio
+author Christian Zink
+email  zinke@informatik.uni-leipzig.de
+date   2013-05-13
+name   signavio plugin
+desc   Signavio Plugin
+url    http://procamp.uni-leipzig.de

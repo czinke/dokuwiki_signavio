@@ -43,7 +43,7 @@ class syntax_plugin_signavio extends DokuWiki_Syntax_Plugin
         $this->Lexer->addExitPattern('</signavio>', 'plugin_signavio');
     }
 
-    function handle($match, $state, $pos, &$handler){
+    function handle($match, $state, $pos, Doku_Handler $handler){
 
 
             switch ($state) {
@@ -111,7 +111,7 @@ class syntax_plugin_signavio extends DokuWiki_Syntax_Plugin
         * @public
         * @see handle()
         */
-        function render($mode, &$renderer, $data) {
+        function render($mode, Doku_Renderer $renderer, $data) {
             if($mode == 'xhtml'){
                 if($data[0] == DOKU_LEXER_UNMATCHED){
 
